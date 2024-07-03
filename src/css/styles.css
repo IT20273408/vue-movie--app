@@ -1,0 +1,173 @@
+/* styles.css */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background: #222;
+    padding: 1rem 0;
+}
+
+.logo {
+    float: left;
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+nav {
+    float: right;
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#main-visual {
+    text-align: center;
+}
+
+#main-visual img {
+    width: 100%;
+    height: auto;
+}
+
+#site-intro {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#quick-info {
+    padding: 2rem 0;
+}
+
+.search-bar {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.search-bar input {
+    width: 100%;
+    max-width: 600px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.movie-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.item {
+    background: #333;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+}
+
+.item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+#contact-us {
+    padding: 2rem 0;
+    background: #222;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    margin-top: 0.5rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    margin-top: 1rem;
+    padding: 0.7rem;
+    background: #f90;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#map {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #111;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .item {
+        width: 100%;
+    }
+}
